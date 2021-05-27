@@ -5,16 +5,16 @@ import java.util.*;
 public class FileOpenManager {
     Map<String, String> map = new TreeMap<>();
 
-    public void registerApp(String file, String app) {
-        map.put(file, app);
+    public void registerApp(String extension, String app) {
+        map.put(extension, app);
     }
 
-    public String getApp(String app) {
-        return map.get(app);
+    public String getApp(String extension) {
+        return map.get(extension);
     }
 
-    public void removeApp(String file) {
-        map.remove(file);
+    public void remove(String extension) {
+        map.remove(extension);
     }
 
     public Set<String> getAllExtension() {
